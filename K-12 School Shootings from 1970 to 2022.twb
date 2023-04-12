@@ -1,0 +1,2269 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0415.1144                               -->
+<workbook original-version='18.1' source-build='2022.1.1 (20221.22.0415.1144)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='TableauProject_16555945419770' path='/workbooks' revision='1.4' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='INCIDENT+ (SSDB_Raw_Data)' inline='true' name='federated.1qjlptc1qy09ca1531vv1091g8zu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='SSDB_Raw_Data' name='excel-direct.1ot6h9u1dtc4og1fbgfyq1vllwcf'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/julia/Downloads/SSDB_Raw_Data.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1ot6h9u1dtc4og1fbgfyq1vllwcf' name='INCIDENT' table='[INCIDENT$]' type='table'>
+          <columns gridOrigin='A1:AD2063:no:A1:AD2063:0' header='yes' outcome='2'>
+            <column datatype='string' name='Incident_ID' ordinal='0' />
+            <column datatype='string' name='Sources' ordinal='1' />
+            <column datatype='string' name='Number_News' ordinal='2' />
+            <column datatype='string' name='Media_Attention' ordinal='3' />
+            <column datatype='string' name='Reliability' ordinal='4' />
+            <column datatype='date' date-parse-format='yyyy-MM-dd' name='Date' ordinal='5' />
+            <column datatype='string' name='Quarter' ordinal='6' />
+            <column datatype='string' name='School' ordinal='7' />
+            <column datatype='string' name='City' ordinal='8' />
+            <column datatype='string' name='State' ordinal='9' />
+            <column datatype='string' name='School_Level' ordinal='10' />
+            <column datatype='string' name='Location' ordinal='11' />
+            <column datatype='string' name='Location_Type' ordinal='12' />
+            <column datatype='string' name='During_School' ordinal='13' />
+            <column datatype='string' name='Time_Period' ordinal='14' />
+            <column datatype='string' name='First_Shot' ordinal='15' />
+            <column datatype='string' name='Summary' ordinal='16' />
+            <column datatype='string' name='Narrative' ordinal='17' />
+            <column datatype='string' name='Situation' ordinal='18' />
+            <column datatype='string' name='Targets' ordinal='19' />
+            <column datatype='string' name='Accomplice' ordinal='20' />
+            <column datatype='string' name='Hostages' ordinal='21' />
+            <column datatype='string' name='Barricade' ordinal='22' />
+            <column datatype='string' name='Officer_Involved' ordinal='23' />
+            <column datatype='string' name='Bullied' ordinal='24' />
+            <column datatype='string' name='Domestic_Violence' ordinal='25' />
+            <column datatype='string' name='Gang_Related' ordinal='26' />
+            <column datatype='string' name='Preplanned' ordinal='27' />
+            <column datatype='string' name='Shots_Fired' ordinal='28' />
+            <column datatype='string' name='Active_Shooter_FBI' ordinal='29' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='excel-direct.1ot6h9u1dtc4og1fbgfyq1vllwcf' name='INCIDENT' table='[INCIDENT$]' type='table'>
+            <columns gridOrigin='A1:AD2063:no:A1:AD2063:0' header='yes' outcome='2'>
+              <column datatype='string' name='Incident_ID' ordinal='0' />
+              <column datatype='string' name='Sources' ordinal='1' />
+              <column datatype='string' name='Number_News' ordinal='2' />
+              <column datatype='string' name='Media_Attention' ordinal='3' />
+              <column datatype='string' name='Reliability' ordinal='4' />
+              <column datatype='date' date-parse-format='yyyy-MM-dd' name='Date' ordinal='5' />
+              <column datatype='string' name='Quarter' ordinal='6' />
+              <column datatype='string' name='School' ordinal='7' />
+              <column datatype='string' name='City' ordinal='8' />
+              <column datatype='string' name='State' ordinal='9' />
+              <column datatype='string' name='School_Level' ordinal='10' />
+              <column datatype='string' name='Location' ordinal='11' />
+              <column datatype='string' name='Location_Type' ordinal='12' />
+              <column datatype='string' name='During_School' ordinal='13' />
+              <column datatype='string' name='Time_Period' ordinal='14' />
+              <column datatype='string' name='First_Shot' ordinal='15' />
+              <column datatype='string' name='Summary' ordinal='16' />
+              <column datatype='string' name='Narrative' ordinal='17' />
+              <column datatype='string' name='Situation' ordinal='18' />
+              <column datatype='string' name='Targets' ordinal='19' />
+              <column datatype='string' name='Accomplice' ordinal='20' />
+              <column datatype='string' name='Hostages' ordinal='21' />
+              <column datatype='string' name='Barricade' ordinal='22' />
+              <column datatype='string' name='Officer_Involved' ordinal='23' />
+              <column datatype='string' name='Bullied' ordinal='24' />
+              <column datatype='string' name='Domestic_Violence' ordinal='25' />
+              <column datatype='string' name='Gang_Related' ordinal='26' />
+              <column datatype='string' name='Preplanned' ordinal='27' />
+              <column datatype='string' name='Shots_Fired' ordinal='28' />
+              <column datatype='string' name='Active_Shooter_FBI' ordinal='29' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1ot6h9u1dtc4og1fbgfyq1vllwcf' name='VICTIM' table='[VICTIM$]' type='table'>
+            <columns gridOrigin='A1:F3094:no:A1:F3094:0' header='yes' outcome='2'>
+              <column datatype='string' name='incidentid' ordinal='0' />
+              <column datatype='string' name='race' ordinal='1' />
+              <column datatype='string' name='injury' ordinal='2' />
+              <column datatype='string' name='gender' ordinal='3' />
+              <column datatype='string' name='schoolaffiliation' ordinal='4' />
+              <column datatype='string' name='age' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:AD2063:no:A1:AD2063:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[VICTIM]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F3094:no:A1:F3094:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incident_ID</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Incident_ID]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Incident_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sources</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sources]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Sources</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number_News</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Number_News]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Number_News</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Media_Attention</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Media_Attention]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Media_Attention</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reliability</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Reliability]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Reliability</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quarter</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Quarter]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Quarter</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>School</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[School]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>School</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>School_Level</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[School_Level]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>School_Level</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location_Type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location_Type]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Location_Type</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>During_School</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[During_School]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>During_School</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time_Period</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Time_Period]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Time_Period</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First_Shot</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[First_Shot]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>First_Shot</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Summary</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Summary]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Summary</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Narrative</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Narrative]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Narrative</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Situation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Situation]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Situation</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Targets</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Targets]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Targets</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accomplice</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Accomplice]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Accomplice</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hostages</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Hostages]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Hostages</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Barricade</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Barricade]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Barricade</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Officer_Involved</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Officer_Involved]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Officer_Involved</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bullied</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Bullied]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Bullied</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Domestic_Violence</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Domestic_Violence]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Domestic_Violence</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gang_Related</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gang_Related]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Gang_Related</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Preplanned</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Preplanned]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Preplanned</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shots_Fired</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Shots_Fired]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Shots_Fired</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Active_Shooter_FBI</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Active_Shooter_FBI]</local-name>
+            <parent-name>[INCIDENT]</parent-name>
+            <remote-alias>Active_Shooter_FBI</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incidentid</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[incidentid]</local-name>
+            <parent-name>[VICTIM]</parent-name>
+            <remote-alias>incidentid</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[race]</local-name>
+            <parent-name>[VICTIM]</parent-name>
+            <remote-alias>race</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>injury</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[injury]</local-name>
+            <parent-name>[VICTIM]</parent-name>
+            <remote-alias>injury</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[VICTIM]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>schoolaffiliation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[schoolaffiliation]</local-name>
+            <parent-name>[VICTIM]</parent-name>
+            <remote-alias>schoolaffiliation</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[VICTIM]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Active Shooter FBI' datatype='string' name='[Active_Shooter_FBI]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[Calculation_1231171591440252928]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='DATEPART(&apos;year&apos;,([Date]))' />
+      </column>
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column caption='Domestic Violence' datatype='string' name='[Domestic_Violence]' role='dimension' type='nominal' />
+      <column caption='During School' datatype='string' name='[During_School]' role='dimension' type='nominal' />
+      <column caption='First Shot' datatype='string' name='[First_Shot]' role='dimension' type='nominal' />
+      <column caption='Gang Related' datatype='string' name='[Gang_Related]' role='dimension' type='nominal' />
+      <column caption='Incident ID' datatype='string' name='[Incident_ID]' role='dimension' type='nominal' />
+      <column caption='Location Type' datatype='string' name='[Location_Type]' role='dimension' type='nominal' />
+      <column caption='Media Attention' datatype='string' name='[Media_Attention]' role='dimension' type='nominal' />
+      <column caption='Number News' datatype='string' name='[Number_News]' role='dimension' type='nominal' />
+      <column caption='Officer Involved' datatype='string' name='[Officer_Involved]' role='dimension' type='nominal' />
+      <column caption='School Level' datatype='string' name='[School_Level]' role='dimension' type='nominal' />
+      <column caption='Shots Fired' datatype='string' name='[Shots_Fired]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Time Period' datatype='string' name='[Time_Period]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Incidents' datatype='table' name='[__tableau_internal_object_id__].[INCIDENT_1CA81C6E89104172B9E580CF377F7962]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='VICTIM' datatype='table' name='[__tableau_internal_object_id__].[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='string' name='[age]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Incidentid' datatype='string' name='[incidentid]' role='dimension' type='nominal' />
+      <column caption='Injury' datatype='string' name='[injury]' role='dimension' type='nominal' />
+      <column aggregation='CountD' caption='Race' datatype='string' default-role='measure' default-type='quantitative' name='[race]' role='dimension' type='nominal' />
+      <column caption='Schoolaffiliation' datatype='string' name='[schoolaffiliation]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_1231171591440252928]' derivation='None' name='[none:Calculation_1231171591440252928:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Injury)' hidden='true' name='[Action (Injury)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[injury]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (YEAR(Date))' hidden='true' name='[Action (YEAR(Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:Date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Year)' hidden='true' name='[Action (Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Calculation_1231171591440252928:ok]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='State, City' />
+      </drill-paths>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/julia/Documents/My Tableau Repository/Datasources/INCIDENT+ (SSDB_Raw_Data).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='06/18/2022 11:22:12 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='INCIDENT_1CA81C6E89104172B9E580CF377F7962' table='[Extract].[INCIDENT_1CA81C6E89104172B9E580CF377F7962]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='INCIDENT_1CA81C6E89104172B9E580CF377F7962' table='[Extract].[INCIDENT_1CA81C6E89104172B9E580CF377F7962]' type='table' />
+            <relation name='VICTIM_64E2F2EA12D64AC4BF064BEC17532598' table='[Extract].[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='INCIDENT+ (SSDB_Raw_Data)' increment-value='%null%' refresh-type='create' rows-inserted='5155' timestamp-start='2022-06-18 23:22:11.370' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Incident_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Incident_ID]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Incident_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2062</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sources</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sources]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Sources</remote-alias>
+              <ordinal>1</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1710</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number_News</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Number_News]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Number_News</remote-alias>
+              <ordinal>2</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Media_Attention</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Media_Attention]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Media_Attention</remote-alias>
+              <ordinal>3</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reliability</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Reliability]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Reliability</remote-alias>
+              <ordinal>4</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>5</ordinal>
+              <family>INCIDENT</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1333</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quarter</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Quarter]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Quarter</remote-alias>
+              <ordinal>6</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>School</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[School]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>School</remote-alias>
+              <ordinal>7</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1373</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>8</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>742</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>9</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>School_Level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[School_Level]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>School_Level</remote-alias>
+              <ordinal>10</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>11</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location_Type]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Location_Type</remote-alias>
+              <ordinal>12</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>During_School</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[During_School]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>During_School</remote-alias>
+              <ordinal>13</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time_Period</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Time_Period]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Time_Period</remote-alias>
+              <ordinal>14</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>First_Shot</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[First_Shot]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>First_Shot</remote-alias>
+              <ordinal>15</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>429</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Summary</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Summary]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Summary</remote-alias>
+              <ordinal>16</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1642</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Narrative</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Narrative]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Narrative</remote-alias>
+              <ordinal>17</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2018</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Situation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Situation]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Situation</remote-alias>
+              <ordinal>18</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Targets</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Targets]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Targets</remote-alias>
+              <ordinal>19</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Accomplice</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Accomplice]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Accomplice</remote-alias>
+              <ordinal>20</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hostages</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Hostages]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Hostages</remote-alias>
+              <ordinal>21</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Barricade</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Barricade]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Barricade</remote-alias>
+              <ordinal>22</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Officer_Involved</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Officer_Involved]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Officer_Involved</remote-alias>
+              <ordinal>23</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bullied</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Bullied]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Bullied</remote-alias>
+              <ordinal>24</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Domestic_Violence</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Domestic_Violence]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Domestic_Violence</remote-alias>
+              <ordinal>25</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gang_Related</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gang_Related]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Gang_Related</remote-alias>
+              <ordinal>26</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Preplanned</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Preplanned]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Preplanned</remote-alias>
+              <ordinal>27</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Shots_Fired</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Shots_Fired]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Shots_Fired</remote-alias>
+              <ordinal>28</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Active_Shooter_FBI</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Active_Shooter_FBI]</local-name>
+              <parent-name>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</parent-name>
+              <remote-alias>Active_Shooter_FBI</remote-alias>
+              <ordinal>29</ordinal>
+              <family>INCIDENT</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[INCIDENT_1CA81C6E89104172B9E580CF377F7962]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>incidentid</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[incidentid]</local-name>
+              <parent-name>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</parent-name>
+              <remote-alias>incidentid</remote-alias>
+              <ordinal>30</ordinal>
+              <family>VICTIM</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1318</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>race</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[race]</local-name>
+              <parent-name>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</parent-name>
+              <remote-alias>race</remote-alias>
+              <ordinal>31</ordinal>
+              <family>VICTIM</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>injury</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[injury]</local-name>
+              <parent-name>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</parent-name>
+              <remote-alias>injury</remote-alias>
+              <ordinal>32</ordinal>
+              <family>VICTIM</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>33</ordinal>
+              <family>VICTIM</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>schoolaffiliation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[schoolaffiliation]</local-name>
+              <parent-name>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</parent-name>
+              <remote-alias>schoolaffiliation</remote-alias>
+              <ordinal>34</ordinal>
+              <family>VICTIM</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>35</ordinal>
+              <family>VICTIM</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Incidents' id='INCIDENT_1CA81C6E89104172B9E580CF377F7962'>
+            <properties context=''>
+              <relation connection='excel-direct.1ot6h9u1dtc4og1fbgfyq1vllwcf' name='INCIDENT' table='[INCIDENT$]' type='table'>
+                <columns gridOrigin='A1:AD2063:no:A1:AD2063:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Incident_ID' ordinal='0' />
+                  <column datatype='string' name='Sources' ordinal='1' />
+                  <column datatype='string' name='Number_News' ordinal='2' />
+                  <column datatype='string' name='Media_Attention' ordinal='3' />
+                  <column datatype='string' name='Reliability' ordinal='4' />
+                  <column datatype='date' date-parse-format='yyyy-MM-dd' name='Date' ordinal='5' />
+                  <column datatype='string' name='Quarter' ordinal='6' />
+                  <column datatype='string' name='School' ordinal='7' />
+                  <column datatype='string' name='City' ordinal='8' />
+                  <column datatype='string' name='State' ordinal='9' />
+                  <column datatype='string' name='School_Level' ordinal='10' />
+                  <column datatype='string' name='Location' ordinal='11' />
+                  <column datatype='string' name='Location_Type' ordinal='12' />
+                  <column datatype='string' name='During_School' ordinal='13' />
+                  <column datatype='string' name='Time_Period' ordinal='14' />
+                  <column datatype='string' name='First_Shot' ordinal='15' />
+                  <column datatype='string' name='Summary' ordinal='16' />
+                  <column datatype='string' name='Narrative' ordinal='17' />
+                  <column datatype='string' name='Situation' ordinal='18' />
+                  <column datatype='string' name='Targets' ordinal='19' />
+                  <column datatype='string' name='Accomplice' ordinal='20' />
+                  <column datatype='string' name='Hostages' ordinal='21' />
+                  <column datatype='string' name='Barricade' ordinal='22' />
+                  <column datatype='string' name='Officer_Involved' ordinal='23' />
+                  <column datatype='string' name='Bullied' ordinal='24' />
+                  <column datatype='string' name='Domestic_Violence' ordinal='25' />
+                  <column datatype='string' name='Gang_Related' ordinal='26' />
+                  <column datatype='string' name='Preplanned' ordinal='27' />
+                  <column datatype='string' name='Shots_Fired' ordinal='28' />
+                  <column datatype='string' name='Active_Shooter_FBI' ordinal='29' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='INCIDENT_1CA81C6E89104172B9E580CF377F7962' table='[Extract].[INCIDENT_1CA81C6E89104172B9E580CF377F7962]' type='table' />
+            </properties>
+          </object>
+          <object caption='VICTIM' id='VICTIM_64E2F2EA12D64AC4BF064BEC17532598'>
+            <properties context=''>
+              <relation connection='excel-direct.1ot6h9u1dtc4og1fbgfyq1vllwcf' name='VICTIM' table='[VICTIM$]' type='table'>
+                <columns gridOrigin='A1:F3094:no:A1:F3094:0' header='yes' outcome='2'>
+                  <column datatype='string' name='incidentid' ordinal='0' />
+                  <column datatype='string' name='race' ordinal='1' />
+                  <column datatype='string' name='injury' ordinal='2' />
+                  <column datatype='string' name='gender' ordinal='3' />
+                  <column datatype='string' name='schoolaffiliation' ordinal='4' />
+                  <column datatype='string' name='age' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='VICTIM_64E2F2EA12D64AC4BF064BEC17532598' table='[Extract].[VICTIM_64E2F2EA12D64AC4BF064BEC17532598]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Incident_ID]' />
+              <expression op='[incidentid]' />
+            </expression>
+            <first-end-point object-id='INCIDENT_1CA81C6E89104172B9E580CF377F7962' />
+            <second-end-point object-id='VICTIM_64E2F2EA12D64AC4BF064BEC17532598' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Year' name='[Action1_52A08A96976D44F3A3C68C1B213F1DDC]'>
+      <activation type='on-select' />
+      <source dashboard='K-12 School Shootings from 1970 to 2022' type='sheet' />
+      <link caption='Year' delimiter=',' escape='\' expression='tsl:K-12%20School%20Shootings%20from%201970%20to%202022?%5Bfederated.1qjlptc1qy09ca1531vv1091g8zu%5D.%5Byr%3ADate%3Aok%5D~s0=&lt;[federated.1qjlptc1qy09ca1531vv1091g8zu].[yr:Date:ok]~na&gt;' include-null='true' multi-select='true' url-escape='true' />
+      <command command='tsc:tsl-filter'>
+        <param name='target' value='K-12 School Shootings from 1970 to 2022' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action2_C742213A2A1F46FDA80CA17D4E7181E5]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='K-12 School Shootings from 1970 to 2022' type='sheet' worksheet='Count of Injury Per Type of Injury' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='K-12 School Shootings from 1970 to 2022' />
+      </command>
+    </action>
+    <datasources>
+      <datasource caption='INCIDENT+ (SSDB_Raw_Data)' name='federated.1qjlptc1qy09ca1531vv1091g8zu' />
+    </datasources>
+    <datasource-dependencies datasource='federated.1qjlptc1qy09ca1531vv1091g8zu'>
+      <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='Count of Injury Per Type of Injury'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='INCIDENT+ (SSDB_Raw_Data)' name='federated.1qjlptc1qy09ca1531vv1091g8zu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qjlptc1qy09ca1531vv1091g8zu'>
+            <column caption='Year' datatype='integer' name='[Calculation_1231171591440252928]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEPART(&apos;year&apos;,([Date]))' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[injury]' derivation='Count' name='[cnt:injury:qk]' pivot='key' type='quantitative' />
+            <column caption='Injury' datatype='string' name='[injury]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1231171591440252928]' derivation='None' name='[none:Calculation_1231171591440252928:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[injury]' derivation='None' name='[none:injury:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:Calculation_1231171591440252928:ok]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Calculation_1231171591440252928:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:Calculation_1231171591440252928:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1qjlptc1qy09ca1531vv1091g8zu].[cnt:injury:qk]</rows>
+        <cols>[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:injury:nk]</cols>
+      </table>
+      <simple-id uuid='{FA2623EB-A297-4164-A79C-F291EEAE7AFE}' />
+    </worksheet>
+    <worksheet name='Incidents Per State'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='INCIDENT+ (SSDB_Raw_Data)' name='federated.1qjlptc1qy09ca1531vv1091g8zu' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1qjlptc1qy09ca1531vv1091g8zu'>
+            <column caption='Year' datatype='integer' name='[Calculation_1231171591440252928]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEPART(&apos;year&apos;,([Date]))' />
+            </column>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.false...column caption='Incidents' datatype='integer' name='[__tableau_internal_object_id__].[INCIDENT_1CA81C6E89104172B9E580CF377F7962]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Incidents' datatype='table' name='[__tableau_internal_object_id__].[INCIDENT_1CA81C6E89104172B9E580CF377F7962]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[INCIDENT_1CA81C6E89104172B9E580CF377F7962]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:INCIDENT_1CA81C6E89104172B9E580CF377F7962:qk]' pivot='key' type='quantitative' />
+            <column caption='Injury' datatype='string' name='[injury]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1231171591440252928]' derivation='None' name='[none:Calculation_1231171591440252928:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qjlptc1qy09ca1531vv1091g8zu].[Action (Injury)]'>
+            <groupfilter function='level-members' level='[injury]' user:ui-action-filter='[Action2_C742213A2A1F46FDA80CA17D4E7181E5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:Calculation_1231171591440252928:ok]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Calculation_1231171591440252928:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:State:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:State:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;AK&quot;' />
+                <groupfilter function='member' level='[none:State:nk]' member='&quot;HI&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:Calculation_1231171591440252928:ok]</column>
+            <column>[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:State:nk]</column>
+            <column>[federated.1qjlptc1qy09ca1531vv1091g8zu].[Action (Injury)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1qjlptc1qy09ca1531vv1091g8zu].[Latitude (generated)]' field-type='quantitative' max='6590802.2073209621' min='2589786.7471631817' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1qjlptc1qy09ca1531vv1091g8zu].[Longitude (generated)]' field-type='quantitative' max='-6541034.3199461605' min='-15359393.417024849' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size' field='[federated.1qjlptc1qy09ca1531vv1091g8zu].[__tableau_internal_object_id__].[cnt:INCIDENT_1CA81C6E89104172B9E580CF377F7962:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+            <encoding attr='color' field='[federated.1qjlptc1qy09ca1531vv1091g8zu].[__tableau_internal_object_id__].[cnt:INCIDENT_1CA81C6E89104172B9E580CF377F7962:qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1qjlptc1qy09ca1531vv1091g8zu].[__tableau_internal_object_id__].[cnt:INCIDENT_1CA81C6E89104172B9E580CF377F7962:qk]' value='Count of Incidents'>
+              <formatted-text>
+                <run>Count of Incidents</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute' value='false' />
+            <format attr='enabled' id='admin-0-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-1st-tier' value='false' />
+            <format attr='enabled' id='hillshade_highlight_bright' value='true' />
+            <format attr='enabled' id='hillshade_highlight_med' value='true' />
+            <format attr='enabled' id='hillshade_shadow_faint' value='true' />
+            <format attr='enabled' id='hillshade_shadow_med' value='true' />
+            <format attr='enabled' id='hillshade_shadow_dark' value='true' />
+            <format attr='enabled' id='hillshade_shadow_extreme' value='true' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.25999999046325684' />
+            <format attr='map-style' value='normal' />
+            <format attr='wrap' value='false' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:Calculation_1231171591440252928:ok]' value='Year' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='5' />
+            <format attr='border-color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-style' value='normal' />
+            <format attr='text-decoration' value='none' />
+            <format attr='font-size' value='10' />
+            <format attr='background-color' value='#f0eae8' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='text-align' value='center' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:State:nk]' />
+              <color column='[federated.1qjlptc1qy09ca1531vv1091g8zu].[__tableau_internal_object_id__].[cnt:INCIDENT_1CA81C6E89104172B9E580CF377F7962:qk]' />
+              <geometry column='[federated.1qjlptc1qy09ca1531vv1091g8zu].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1qjlptc1qy09ca1531vv1091g8zu].[Latitude (generated)]</rows>
+        <cols>[federated.1qjlptc1qy09ca1531vv1091g8zu].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{EE83B1EC-73B2-44DF-AEE9-1F27BD1601CA}' />
+    </worksheet>
+    <worksheet name='Incidents by Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Incidents by Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='INCIDENT+ (SSDB_Raw_Data)' name='federated.1qjlptc1qy09ca1531vv1091g8zu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qjlptc1qy09ca1531vv1091g8zu'>
+            <column caption='Year' datatype='integer' name='[Calculation_1231171591440252928]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='DATEPART(&apos;year&apos;,([Date]))' />
+            </column>
+            <_.fcp.ObjectModelTableType.false...column caption='Incidents' datatype='integer' name='[__tableau_internal_object_id__].[INCIDENT_1CA81C6E89104172B9E580CF377F7962]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <_.fcp.ObjectModelTableType.true...column caption='Incidents' datatype='table' name='[__tableau_internal_object_id__].[INCIDENT_1CA81C6E89104172B9E580CF377F7962]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[INCIDENT_1CA81C6E89104172B9E580CF377F7962]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:INCIDENT_1CA81C6E89104172B9E580CF377F7962:qk]' pivot='key' type='quantitative' />
+            <column caption='Injury' datatype='string' name='[injury]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1231171591440252928]' derivation='None' name='[none:Calculation_1231171591440252928:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[injury]' derivation='None' name='[none:injury:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qjlptc1qy09ca1531vv1091g8zu].[Action (Injury)]'>
+            <groupfilter function='level-members' level='[injury]' user:ui-action-filter='[Action2_C742213A2A1F46FDA80CA17D4E7181E5]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:injury:nk]'>
+            <groupfilter function='level-members' level='[none:injury:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:injury:nk]</column>
+            <column>[federated.1qjlptc1qy09ca1531vv1091g8zu].[Action (Injury)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:Calculation_1231171591440252928:qk]' field-type='quantitative' max='2024' min='1969' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#79706e' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1qjlptc1qy09ca1531vv1091g8zu].[__tableau_internal_object_id__].[cnt:INCIDENT_1CA81C6E89104172B9E580CF377F7962:qk]</rows>
+        <cols>[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:Calculation_1231171591440252928:qk]</cols>
+      </table>
+      <simple-id uuid='{BF592947-4322-4103-B5A6-4A693532FCE8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='K-12 School Shootings from 1970 to 2022'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontname='Verdana' fontsize='24'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='INCIDENT+ (SSDB_Raw_Data)' name='federated.1qjlptc1qy09ca1531vv1091g8zu' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1qjlptc1qy09ca1531vv1091g8zu'>
+        <column caption='Year' datatype='integer' name='[Calculation_1231171591440252928]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='DATEPART(&apos;year&apos;,([Date]))' />
+        </column>
+        <column-instance column='[Calculation_1231171591440252928]' derivation='None' name='[none:Calculation_1231171591440252928:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98230' id='50' param='vert' type-v2='layout-flow' w='99050' x='475' y='885'>
+            <zone h='5199' id='51' type-v2='title' w='99050' x='475' y='885'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='93031' id='48' type-v2='layout-basic' w='99050' x='475' y='6084'>
+              <zone h='53039' id='38' param='horz' type-v2='layout-flow' w='99050' x='475' y='6084'>
+                <zone h='53039' id='36' type-v2='layout-basic' w='99050' x='475' y='6084'>
+                  <zone h='53039' id='34' param='horz' type-v2='layout-flow' w='64723' x='475' y='6084'>
+                    <zone h='53039' id='32' type-v2='layout-basic' w='64723' x='475' y='6084'>
+                      <zone h='53039' id='28' param='horz' type-v2='layout-flow' w='52646' x='12552' y='6084'>
+                        <zone h='53039' id='15' param='vert' type-v2='layout-flow' w='52646' x='12552' y='6084'>
+                          <zone h='53039' id='26' name='Incidents Per State' w='52646' x='12552' y='6084'>
+                            <layout-cache minheight='244' minwidth='202' type-h='scalable' type-w='scalable' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                        </zone>
+                      </zone>
+                      <zone h='44646' id='29' mode='slider' name='Incidents Per State' param='[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:Calculation_1231171591440252928:ok]' type-v2='filter' w='12077' x='475' y='14477'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='8393' id='30' name='Incidents Per State' pane-specification-id='5' param='[federated.1qjlptc1qy09ca1531vv1091g8zu].[__tableau_internal_object_id__].[cnt:INCIDENT_1CA81C6E89104172B9E580CF377F7962:qk]' type-v2='color' w='12077' x='475' y='6084'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='53039' id='35' name='Count of Injury Per Type of Injury' w='34327' x='65198' y='6084'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='39992' id='39' name='Incidents by Year' w='99050' x='475' y='59123'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout name='Desktop'>
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='7' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='92750' id='5' type-v2='layout-basic' w='98400' x='800' y='6250' />
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontname='Verdana' fontsize='24'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='61' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98230' id='60' param='vert' type-v2='layout-flow' w='99050' x='475' y='885'>
+                <zone h='5199' id='51' type-v2='title' w='99050' x='475' y='885'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='44646' id='29' mode='slider' name='Incidents Per State' param='[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:Calculation_1231171591440252928:ok]' type-v2='filter' w='12077' x='475' y='14477'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53039' id='26' is-fixed='true' name='Incidents Per State' w='52646' x='12552' y='6084'>
+                  <layout-cache minheight='244' minwidth='202' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8393' id='30' name='Incidents Per State' pane-specification-id='5' param='[federated.1qjlptc1qy09ca1531vv1091g8zu].[__tableau_internal_object_id__].[cnt:INCIDENT_1CA81C6E89104172B9E580CF377F7962:qk]' type-v2='color' w='12077' x='475' y='6084'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53039' id='35' is-fixed='true' name='Count of Injury Per Type of Injury' w='34327' x='65198' y='6084'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39992' id='39' is-fixed='true' name='Incidents by Year' w='99050' x='475' y='59123'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{CD7C1D1F-003C-4FC3-9176-B5EB1C6D8C46}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='K-12 School Shootings from 1970 to 2022'>
+      <viewpoints>
+        <viewpoint name='Count of Injury Per Type of Injury'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Incidents Per State'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='Incidents by Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='51' />
+      <simple-id uuid='{90D2B3B9-58CC-420B-A8F8-A41F5E0BEC2F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Count of Injury Per Type of Injury'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:Calculation_1231171591440252928:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1qjlptc1qy09ca1531vv1091g8zu].[attr:Calculation_1231171591440252928:ok]</field>
+            <field>[federated.1qjlptc1qy09ca1531vv1091g8zu].[attr:injury:nk]</field>
+            <field>[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:Calculation_1231171591440252928:qk]</field>
+            <field>[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:injury:nk]</field>
+            <field>[federated.1qjlptc1qy09ca1531vv1091g8zu].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D1698F9F-D6A8-4808-A518-2A45A7FF85C4}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Incidents Per State'>
+      <cards>
+        <edge name='left'>
+          <strip size='240'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='46'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card param='[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:Calculation_1231171591440252928:ok]' type='filter' />
+            <card pane-specification-id='5' param='[federated.1qjlptc1qy09ca1531vv1091g8zu].[__tableau_internal_object_id__].[cnt:INCIDENT_1CA81C6E89104172B9E580CF377F7962:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:Calculation_1231171591440252928:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FE83B47B-5BAD-484D-9042-D4532C155521}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Incidents by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1qjlptc1qy09ca1531vv1091g8zu].[cnt:injury:ok]</field>
+            <field>[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:Calculation_1231171591440252928:qk]</field>
+            <field>[federated.1qjlptc1qy09ca1531vv1091g8zu].[none:injury:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A688839B-6D49-4C7A-A9AF-C0DA2ACB1AFA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='K-12 School Shootings from 1970 to 2022' width='192'>
+      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
+      vTI5rfn/AfHDhlZPMo4cAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
